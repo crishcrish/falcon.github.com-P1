@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>FALCON Mensajería Femenina - Entregas que Empoderan</title>
+  <meta content="Mensajería rápida con propósito, operada por mujeres que rompen estereotipos en Bucaramanga y su área metropolitana." name="description">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind Config -->
+  <script src="tailwind.config.js"></script>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-dark text-white font-sans antialiased">
+
+  <!-- BEGIN: Navbar -->
+  <nav class="fixed top-0 w-full z-50 transition-all duration-300 px-6 py-4 flex items-center justify-between" id="main-nav">
+    <div class="flex items-center">
+      <a class="flex items-center gap-2" href="#">
+        <img alt="Falcon Logo" class="h-16 w-auto object-contain" data-purpose="brand-logo" src="images/1.png ">
+      </a>
+    </div>
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-8 font-semibold uppercase text-xs tracking-widest">
+      <a class="hover:text-primary transition-colors" href="#inicio">Inicio</a>
+      <a class="hover:text-primary transition-colors" href="#nosotros">Nosotros</a>
+      <a class="hover:text-primary transition-colors" href="#servicios">Servicios</a>
+      <a class="hover:text-primary transition-colors" href="#contacto">Contacto</a>
+    </div>
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden text-white" id="mobile-menu-btn">
+      <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      </svg>
+    </button>
+  </nav>
+  <!-- END: Navbar -->
+
+  <!-- BEGIN: Mobile Menu -->
+  <div class="fixed top-0 left-0 w-full h-screen z-40 bg-dark flex-col items-center justify-center hidden" id="mobile-menu">
+    <button class="absolute top-5 right-6 text-white" id="mobile-menu-close">
+      <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      </svg>
+    </button>
+    <nav class="flex flex-col items-center gap-8 font-semibold uppercase text-lg tracking-widest">
+      <a class="hover:text-primary transition-colors" href="#inicio" id="mobile-link-inicio">Inicio</a>
+      <a class="hover:text-primary transition-colors" href="#nosotros" id="mobile-link-nosotros">Nosotros</a>
+      <a class="hover:text-primary transition-colors" href="#servicios" id="mobile-link-servicios">Servicios</a>
+      <a class="hover:text-primary transition-colors" href="#contacto" id="mobile-link-contacto">Contacto</a>
+    </nav>
+  </div>
+  <!-- END: Mobile Menu -->
+
+  <!-- BEGIN: Hero Section -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden" id="inicio">
+    <div class="absolute inset-0 z-0">
+      <img alt="Hero Background" class="w-full h-full object-cover brightness-50" src="https://i.postimg.cc/0yVXyTrq/Falcon-Logo.png">
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-dark/40 to-dark"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-4xl animate-fade-in">
+      <span class="inline-block px-4 py-1 mb-6 border border-primary text-primary rounded-full text-sm font-bold tracking-widest uppercase">Falcon Mensajería Femenina</span>
+      <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+        Entregas que <span class="text-primary italic">Empoderan</span>
+      </h1>
+      <p class="text-xl md:text-2xl mb-10 text-gray-300">
+        Mensajería rápida con propósito, operada por mujeres que rompen estereotipos.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a class="bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-custom transition-all transform hover:scale-105 shadow-lg shadow-primary/20" href="https://wa.me/573054058984" target="_blank">
+          SOLICITA TU SERVICIO
+        </a>
+        <a class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-bold py-4 px-8 rounded-custom transition-all" href="#nosotros">
+          CONÓCENOS
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END: Hero Section -->
+
+  <!-- (resto del código sin cambios) -->
+
+   <!-- BEGIN: Mission & Vision -->
+  <section class="py-24 bg-dark" id="nosotros">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Visual Content -->
+        <div class="relative rounded-custom overflow-hidden group">
+          <img alt="Misión y Visión" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="images/vision-mision.png">
+          <div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+        </div>
+        <!-- Text Content -->
+        <div class="space-y-12">
+          <div data-purpose="mission-block">
+            <h2 class="text-secondary text-4xl font-black mb-4 flex items-center gap-4">
+              <span class="bg-secondary text-dark px-3 py-1 rounded text-2xl italic">MISIÓN</span>
+            </h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+              Servicio de mensajería confiable y con enfoque social, liderado por mujeres que fortalecen su autonomía e impactan positivamente la comunidad.
+            </p>
+          </div>
+          <div data-purpose="vision-block">
+            <h2 class="text-primary text-4xl font-black mb-4 flex items-center gap-4">
+              <span class="bg-primary text-white px-3 py-1 rounded text-2xl italic">VISIÓN</span>
+            </h2>
+            <p class="text-xl leading-relaxed text-gray-300">
+              Para 2027, ser la red de mensajería femenina más influyente por nuestro compromiso social, excelencia y empoderamiento económico.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Mission & Vision -->
+
+  <!-- BEGIN: Differentiator Quote -->
+  <section class="py-20 bg-primary relative overflow-hidden">
+    <div class="absolute top-0 right-0 opacity-10 pointer-events-none">
+      <img alt="" class="w-96" src="">
+    </div>
+    <div class="container mx-auto px-6 text-center">
+      <blockquote class="text-3xl md:text-4xl font-bold max-w-4xl mx-auto leading-tight italic">
+        "Cada entrega aporta al bienestar y crecimiento de una mujer trabajadora"
+      </blockquote>
+    </div>
+  </section>
+  <!-- END: Differentiator Quote -->
+
+    <!-- BEGIN: About / Nuestra Historia -->
+  <section class="py-24 bg-dark" id="historia">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Image -->
+        <div class="relative rounded-custom overflow-hidden group">
+          <img src="images/historia.jpeg" alt="Nuestra Historia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+        </div>
+
+        <!-- Text -->
+        <div>
+          <h2 class="text-4xl md:text-5xl font-black mb-6 uppercase">
+            Nuestra <span class="text-primary">Historia</span>
+          </h2>
+          <div class="w-24 h-2 bg-secondary mb-8"></div>
+
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Falcon nació de la visión de nuestra fundadora, quien tras años en la industria logística tradicional, identificó una brecha: la falta de oportunidades seguras y flexibles para mujeres en el sector transporte.
+          </p>
+
+          <p class="text-lg text-gray-300 leading-relaxed">
+            Lo que comenzó como una pequeña flota local, se ha transformado en un referente de eficiencia. Nuestra historia es la de mujeres que deciden tomar el volante de sus vidas, combinando profesionalismo extremo con la calidez humana que nos caracteriza.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: About / Nuestra Historia -->
+
+  <!-- BEGIN: Services Section -->
+  <section class="py-24 bg-neutral-900" id="servicios">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-4 uppercase">Nuestros <span class="text-primary">Servicios</span></h2>
+        <div class="w-24 h-2 bg-secondary mx-auto mb-8"></div>
+        <p class="text-gray-400 max-w-2xl mx-auto">Ofrecemos soluciones logísticas integrales con la seguridad y puntualidad que nos caracteriza.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Service Card 1 -->
+        <div class="bg-dark p-8 rounded-custom border border-white/5 hover:border-primary/50 transition-all group" data-purpose="service-card">
+          <div class="mb-6 text-primary group-hover:scale-110 transition-transform">
+            <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Mensajería Empresarial</h3>
+          <p class="text-gray-400 text-sm">Trámites bancarios, entrega de facturación y gestión documental para su empresa.</p>
+        </div>
+        <!-- Service Card 2 -->
+        <div class="bg-dark p-8 rounded-custom border border-white/5 hover:border-primary/50 transition-all group" data-purpose="service-card">
+          <div class="mb-6 text-primary group-hover:scale-110 transition-transform">
+            <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Domicilios Express</h3>
+          <p class="text-gray-400 text-sm">Entregas inmediatas de alimentos, medicamentos y compras de primera necesidad.</p>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="bg-dark p-8 rounded-custom border border-white/5 hover:border-primary/50 transition-all group" data-purpose="service-card">
+          <div class="mb-6 text-primary group-hover:scale-110 transition-transform">
+            <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Entregas de Paquetes</h3>
+          <p class="text-gray-400 text-sm">Distribución segura de mercancía y paquetes pequeños en toda el área metropolitana.</p>
+        </div>
+        <!-- Service Card 4 -->
+        <div class="bg-dark p-8 rounded-custom border border-white/5 hover:border-primary/50 transition-all group" data-purpose="service-card">
+          <div class="mb-6 text-primary group-hover:scale-110 transition-transform">
+            <svg class="h-12 w-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Mensajeras Fijas</h3>
+          <p class="text-gray-400 text-sm">Personal dispuesto exclusivamente para su negocio por días o meses completos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Services Section -->
+
+  <!-- BEGIN: Informational Section -->
+  <section class="py-24 bg-dark">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <!-- Left: Image & Social Proof -->
+        <div class="space-y-8">
+          <div class="bg-neutral-800 p-8 rounded-custom">
+            <h4 class="text-2xl font-bold mb-4 text-secondary">Puntualidad y Seguridad</h4>
+            <p class="text-gray-300 italic mb-6">"Operamos con protocolos claros de trazabilidad y atención al cliente. Somos mujeres comprometidas, valientes y altamente responsables."</p>
+            <div class="flex items-center gap-4">
+              <div class="h-px bg-white/10 flex-grow"></div>
+              <img alt="Logos Clientes" class="h-12 object-contain filter grayscale hover:grayscale-0 transition-all opacity-50" src="images/1.png">
+            </div>
+          </div>
+        </div>
+        <!-- Right: Coverage & Hours -->
+        <div class="flex flex-col justify-center">
+          <h2 class="text-4xl font-black mb-8 uppercase">Cobertura e <span class="text-primary">Información</span></h2>
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-primary/20 p-3 rounded-full text-primary">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <div>
+                <h5 class="text-lg font-bold">Área Metropolitana</h5>
+                <p class="text-gray-400">Bucaramanga, Floridablanca, Girón, Piedecuesta.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="bg-primary/20 p-3 rounded-full text-primary">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </div>
+              <div>
+                <h5 class="text-lg font-bold">Horarios de Atención</h5>
+                <p class="text-gray-400">Lunes a Sábado: 6:00 AM - 6:00 PM</p>
+                <p class="text-gray-400">Domingos y Festivos: 8:00 AM - 12:00 PM</p>
+              </div>
+            </div>
+            <div class="mt-12 p-10 bg-gradient-to-br from-primary to-accent rounded-custom">
+              <h3 class="text-3xl font-black mb-4">¿Listo para enviar?</h3>
+              <p class="mb-8 opacity-90">Contáctanos ahora y descubre la diferencia de una mensajería con propósito social.</p>
+              <a class="inline-block bg-white text-dark font-black py-4 px-10 rounded-custom hover:bg-gray-100 transition-colors uppercase tracking-widest" href="https://wa.me/573054058984">
+                Enviar Mensaje
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Informational Section -->
+
+      <!-- BEGIN: Values / Mensajeras -->
+  <section class="py-24 bg-neutral-900">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-6 uppercase">
+          Nuestras <span class="text-primary">Mensajeras</span>
+        </h2>
+        <div class="w-24 h-2 bg-secondary mx-auto mb-8"></div>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          Nuestras mensajeras no son solo repartidoras; son estudiantes, amas de casa y emprendedoras. En Falcon, creamos un entorno de trabajo seguro, flexible y digno que les permite crecer mientras mantienen el pulso de la ciudad.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="bg-dark p-8 rounded-custom border border-white/5 hover:border-primary/50 transition-all">
+          <h3 class="text-xl font-bold mb-4 text-primary">Protocolos de Seguridad</h3>
+          <p class="text-gray-400">
+            Monitoreo constante y rutas optimizadas para garantizar la integridad de nuestras Falcons.
+          </p>
+        </div>
+
+        <div class="bg-dark p-8 rounded-custom border border-white/5 hover:border-primary/50 transition-all">
+          <h3 class="text-xl font-bold mb-4 text-primary">Comunidad y Apoyo</h3>
+          <p class="text-gray-400">
+            Redes de apoyo internas para crecimiento personal y profesional de cada colaboradora.
+          </p>
+        </div>
+            </div>
+      <div class="mt-12 w-full flex justify-center">
+        <a href="https://wa.me/573054058984" target="_blank" class="block mx-auto bg-primary hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-custom transition-all transform hover:scale-105 shadow-lg shadow-primary/20 uppercase tracking-widest">
+          Quiero ser una Falcon
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END: Values / Mensajeras -->
+
+      <!-- BEGIN: Benefits Section -->
+  <section class="py-24 bg-dark">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-black mb-4 uppercase">Beneficios <span class="text-primary">Exclusivos</span></h2>
+        <div class="w-24 h-2 bg-secondary mx-auto mb-8"></div>
+        <p class="text-gray-400 max-w-2xl mx-auto">Estrategias pensadas para fidelizar a nuestros clientes y recompensar su confianza.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+
+        <div class="bg-neutral-900 p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="mb-4 text-primary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3z"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+          </div>
+          <p class="text-gray-300">20% de descuento en el décimo servicio para clientes fieles.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="mb-4 text-primary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 2C8 8 6 12 12 22c6-10 4-14 0-20z"/></svg>
+          </div>
+          <p class="text-gray-300">Componente ambiental: por cada cliente nuevo, plantamos un árbol.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="mb-4 text-primary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </div>
+          <p class="text-gray-300">Servicios en la misma ruta con descuento especial en envíos múltiples.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="mb-4 text-primary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <p class="text-gray-300">Días especiales con bono: promociones en Amor y Amistad, Día de la Madre y más.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="mb-4 text-primary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2h-2"/><path d="M7 8H5a2 2 0 00-2 2v8a2 2 0 002 2h2"/><path d="M7 12h10"/></svg>
+          </div>
+          <p class="text-gray-300">Marketing bidireccional: te promocionamos entre nuestra comunidad de clientes.</p>
+        </div>
+
+        <div class="bg-neutral-900 p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all transform hover:-translate-y-2 hover:shadow-lg">
+          <div class="mb-4 text-primary">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 9V7a5 5 0 00-10 0v2"/><rect x="5" y="9" width="14" height="10" rx="2"/></svg>
+          </div>
+          <p class="text-gray-300">Pagos contraentrega gestionados de forma segura con transferencia inmediata.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END: Benefits Section -->
+
+  <!-- BEGIN: Payment Methods Section -->
+  <section class="py-24 bg-neutral-900">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl md:text-5xl font-black mb-6 uppercase">
+        Aceptamos <span class="text-primary">todos los medios de pago</span>
+      </h2>
+      <div class="w-24 h-2 bg-secondary mx-auto mb-12"></div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-4xl mx-auto">
+        <div class="bg-dark p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all">
+          <p class="font-bold text-lg">Transferencia</p>
+        </div>
+        <div class="bg-dark p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all">
+          <p class="font-bold text-lg">Débito</p>
+        </div>
+        <div class="bg-dark p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all">
+          <p class="font-bold text-lg">Billetera</p>
+        </div>
+        <div class="bg-dark p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all">
+          <p class="font-bold text-lg">Tarjeta</p>
+        </div>
+        <div class="bg-dark p-6 rounded-custom border border-white/5 hover:border-primary/50 transition-all col-span-2 md:col-span-1 lg:col-span-1">
+          <p class="font-bold text-lg">Efectivo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Payment Methods Section -->
+
+    <!-- BEGIN: Why Choose Us Section -->
+  <section class="py-24 bg-neutral-900">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Image -->
+        <div class="relative rounded-custom overflow-hidden group">
+          <img src="images/aliados.png" alt="Marcas Aliadas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          <div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+        </div>
+
+        <!-- Text -->
+        <div>
+          <h2 class="text-4xl md:text-5xl font-black mb-6 uppercase">
+            ¿Por qué nuestras <span class="text-primary">marcas aliadas</span> nos eligen?
+          </h2>
+          <div class="w-24 h-2 bg-secondary mb-8"></div>
+
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Las empresas que confían en nosotras destacan nuestro compromiso, calidad en cada detalle y atención personalizada. Nos enfocamos en comprender las necesidades de cada cliente para ofrecer soluciones creativas, eficientes y adaptadas a sus objetivos.
+          </p>
+
+          <p class="text-lg text-gray-300 leading-relaxed">
+            Nuestra experiencia, responsabilidad y pasión por lo que hacemos nos convierten en un aliado estratégico que aporta valor real a cada proyecto.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Why Choose Us Section -->
+
+   <!-- BEGIN: Contact Pro Section -->
+<section class="py-24 bg-gradient-to-br from-primary to-accent rounded-custom">
+  <div class="container mx-auto px-6">
+    <div class="rounded-[2rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+
+      <!-- LEFT SIDE -->
+      <div class="bg-[#2a0015] p-10 md:p-14">
+        <h2 class="text-4xl md:text-5xl font-black mb-6">
+          Contáctanos
+        </h2>
+
+        <p class="text-gray-300 mb-10">
+          Escríbenos directamente y una de nuestras Falcons te atenderá de inmediato.
+        </p>
+
+        <div class="space-y-8">
+
+          <!-- Gerente -->
+          <div class="flex items-center gap-4">
+            <div class="bg-primary/30 p-3 rounded-full">
+              📱
+            </div>
+            <div>
+              <p class="text-green-400 text-xs font-bold uppercase">Gerente</p>
+              <p class="font-bold">3054058984</p>
+            </div>
+          </div>
+
+          <!-- Administrativo -->
+          <div class="flex items-center gap-4">
+            <div class="bg-primary/30 p-3 rounded-full">
+              📞
+            </div>
+            <div>
+              <p class="text-green-400 text-xs font-bold uppercase">Administrativo</p>
+              <p class="font-bold">3214567898</p>
+            </div>
+          </div>
+
+          <!-- Redes -->
+          <div class="flex items-center gap-4">
+            <div class="bg-primary/30 p-3 rounded-full">
+              📷
+            </div>
+            <div>
+              <p class="text-green-400 text-xs font-bold uppercase">Instagram & TikTok</p>
+              <p class="font-bold">@mensajeria.femenina</p>
+            </div>
+          </div>
+
+          <!-- Ubicación -->
+          <div class="flex items-center gap-4">
+            <div class="bg-primary/30 p-3 rounded-full">
+              📍
+            </div>
+            <div>
+              <p class="text-green-400 text-xs font-bold uppercase">Ubicación</p>
+              <p class="font-bold">Bucaramanga, Santander</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="bg-[#0f1720] p-10 md:p-14 flex flex-col justify-center">
+
+        <p class="text-gray-300 mb-8 leading-relaxed">
+          Escríbenos por WhatsApp con el origen, destino y tipo de servicio que necesitas. 
+          Una de nuestras Falcons te confirma la tarifa de inmediato.
+        </p>
+
+        <a href="https://wa.me/573054058984?text=Hola,%20quiero%20solicitar%20un%20servicio"
+           target="_blank"
+           class="bg-primary text-white font-bold py-4 px-8 rounded-xl text-center 
+                  hover:scale-105 transition-all shadow-lg shadow-primary/30 mb-10">
+          💬 ESCRIBIR POR WHATSAPP
+        </a>
+
+        <div class="border-t border-white/10 pt-6">
+          <p class="text-gray-400 text-sm mb-4 uppercase tracking-wider">
+            O escríbenos directamente
+          </p>
+
+          <p class="text-primary font-bold text-lg">
+            @mensajeria.femenina
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- END: Contact Pro Section -->
+
+<!-- BEGIN: FAQ Section -->
+<section class="py-24 bg-neutral-900" id="faq">
+  <div class="container mx-auto px-6 max-w-5xl">
+
+    <!-- Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-black uppercase">
+        Preguntas <span class="text-primary">Frecuentes</span>
+      </h2>
+      <div class="w-24 h-2 bg-secondary mx-auto mt-6"></div>
+    </div>
+
+    <!-- FAQ Items -->
+    <div class="space-y-6">
+
+      <!-- Item -->
+      <div class="bg-dark border border-white/5 rounded-custom overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left">
+          <span class="font-bold text-lg">¿Cuánto cuesta un domicilio?</span>
+          <svg class="w-6 h-6 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6"></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-400">
+          Las tarifas para 2026 inician desde <strong>$$$$</strong> para entregas programadas y
+          <strong>$$$$</strong> para domicilios express dentro de Bucaramanga. Para otras zonas aplican recargos.
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="bg-dark border border-white/5 rounded-custom overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left">
+          <span class="font-bold text-lg">¿Cuánto tiempo demora una entrega?</span>
+          <svg class="w-6 h-6 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6"></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-400">
+          Los domicilios express se entregan en un tiempo estimado de <strong>XX a XX minutos</strong>,
+          dependiendo del tráfico y disponibilidad.
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="bg-dark border border-white/5 rounded-custom overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left">
+          <span class="font-bold text-lg">¿Qué pasa si se pierde o daña el paquete?</span>
+          <svg class="w-6 h-6 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6"></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-400">
+          Contamos con protocolos de trazabilidad. En caso de inconvenientes, activamos nuestro proceso de
+          compensación según términos del servicio.
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="bg-dark border border-white/5 rounded-custom overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left">
+          <span class="font-bold text-lg">¿Manejan pago contraentrega?</span>
+          <svg class="w-6 h-6 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6"></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-400">
+          Sí, cobramos al destinatario y transferimos el dinero al cliente. Ideal para tiendas online.
+        </div>
+      </div>
+
+      <!-- Item -->
+      <div class="bg-dark border border-white/5 rounded-custom overflow-hidden">
+        <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center p-6 text-left">
+          <span class="font-bold text-lg">¿Cómo puedo hacer seguimiento?</span>
+          <svg class="w-6 h-6 transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6"></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-400">
+          Recibirás actualizaciones por WhatsApp sobre el estado de tu pedido en tiempo real.
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- END: FAQ Section -->
+
+<!-- BEGIN: PQR Section -->
+<section class="py-24 bg-neutral-900" id="pqr">
+  <div class="container mx-auto px-6">
+
+    <!-- Título -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-black uppercase">
+        PQR <span class="text-primary">— Contáctanos</span>
+      </h2>
+    </div>
+
+    <!-- Caja -->
+    <div class="max-w-3xl mx-auto bg-dark p-10 rounded-custom border border-white/5 shadow-xl">
+
+      <!-- FORMULARIO (COMENTADO) -->
+      <!--
+      <div class="space-y-6">
+        <div>
+          <label class="block text-sm font-semibold mb-2">Nombre Completo</label>
+          <input type="text" id="pqr-nombre"
+            class="w-full bg-neutral-800 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary"
+            placeholder="Tu nombre">
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-2">WhatsApp / Teléfono</label>
+          <input type="tel" id="pqr-tel"
+            class="w-full bg-neutral-800 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary"
+            placeholder="3XX XXX XXXX">
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-2">Tipo de solicitud</label>
+          <select id="pqr-tipo"
+            class="w-full bg-neutral-800 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary">
+            <option>Petición</option>
+            <option>Queja</option>
+            <option>Reclamo</option>
+            <option>Sugerencia</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-semibold mb-2">Describe tu caso</label>
+          <textarea rows="4" id="pqr-msg"
+            class="w-full bg-neutral-800 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary"
+            placeholder="Cuéntanos qué ocurrió y número de guía si aplica..."></textarea>
+        </div>
+
+        <button
+          class="w-full bg-primary hover:bg-opacity-90 text-white font-bold py-4 rounded-custom transition-all"
+          onclick="
+            var n=document.getElementById('pqr-nombre').value||'Cliente';
+            var t=document.getElementById('pqr-tipo').value;
+            var m=document.getElementById('pqr-msg').value||'';
+            var msg='PQR Falcon%0ATipo: '+encodeURIComponent(t)+'%0ANombre: '+encodeURIComponent(n)+'%0ADetalle: '+encodeURIComponent(m);
+            window.open('https://wa.me/573054058984?text='+msg,'_blank');
+          ">
+          Enviar PQR por WhatsApp
+        </button>
+      </div>
+      -->
+
+      <!-- CTA ACTUAL -->
+      <div class="text-center">
+        <p class="text-lg font-semibold mb-4">
+          ¿Tienes una petición, queja o reclamo?
+        </p>
+
+        <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-xl mx-auto">
+          Por ahora puedes enviarnos tu PQR directamente por WhatsApp. Incluye tu nombre,
+          número de guía (si aplica) y descripción del caso. Te respondemos en menos de 24 horas.
+        </p>
+
+        <a href="https://wa.me/573054058984?text=Hola!%20Quiero%20radicar%20una%20PQR."
+          target="_blank"
+          class="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:scale-105 text-white font-bold py-4 px-8 rounded-custom transition-all shadow-lg">
+
+          <!-- Icono -->
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          </svg>
+
+          Enviar PQR por WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- END: PQR Section -->
+
+  <!-- BEGIN: Footer -->
+  <footer class="bg-neutral-950 pt-20 pb-10" id="contacto">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div>
+          <img alt="Falcon Footer Logo" class="h-20 w-auto mb-6" src="images/1.png">
+          <p class="text-gray-500 max-w-xs">Empoderando mujeres a través de la logística eficiente y segura en Santander.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-6 text-white uppercase tracking-wider">Enlaces Rápidos</h4>
+          <ul class="space-y-4 text-gray-500">
+            <li><a class="hover:text-primary transition-colors" href="#inicio">Inicio</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#nosotros">Nosotros</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#servicios">Servicios</a></li>
+            <li><a class="hover:text-primary transition-colors" href="https://wa.me/573054058984">Pide un Servicio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xl font-bold mb-6 text-white uppercase tracking-wider">Síguenos</h4>
+          <div class="flex gap-4 mb-8">
+            <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-all" href="#">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+            </a>
+          </div>
+          <p class="text-sm font-bold text-gray-400">@mensajeria.femenina</p>
+          <p class="text-sm text-gray-500 mt-2">Bucaramanga, Santander</p>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 mt-8 text-center text-gray-500 text-xs max-w-3xl mx-auto leading-relaxed">
+  <p>
+    Al adquirir nuestros servicios, el cliente autoriza el uso y tratamiento de sus datos personales
+    conforme a la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Colombia.
+    Falcón Mensajería Femenina es responsable del tratamiento de la información suministrada
+    y la utilizará exclusivamente para la prestación del servicio contratado.
+  </p>
+</div>
+
+      <div class="border-t border-white/5 pt-10 text-center text-gray-600 text-xs">
+        <p>© 2023 FALCON Mensajería Femenina. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+
+  <!-- BEGIN: Floating WhatsApp Button -->
+  <a aria-label="WhatsApp Contact" class="fixed bottom-8 right-8 z-[100] bg-[#25D366] p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center" href="https://wa.me/573054058984" target="_blank">
+    <svg class="w-8 h-8 text-white fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.407 3.481 2.242 2.242 3.48 5.23 3.481 8.411-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.3 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
+    </svg>
+  </a>
+  <!-- END: Floating WhatsApp Button -->
+
+  <!-- Main JS -->
+  <script src="main.js"></script>
+</body>
+</html>
